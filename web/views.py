@@ -4,4 +4,8 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'web/base.html', {'title': 'Home'})
+    return render(request, 'web/index.html', {'title': 'Home'})
+
+
+def about(request):
+    return render(request, 'web/about.html', {})
